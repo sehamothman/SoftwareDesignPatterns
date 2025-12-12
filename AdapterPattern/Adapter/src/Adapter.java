@@ -1,0 +1,16 @@
+import java.lang.annotation.Target;
+
+public class Adapter implements Itarget {
+
+    Adaptee adaptee;
+
+    public Adapter(Adaptee adaptee) {
+        this.adaptee = adaptee;
+    }
+
+    @Override
+    public void request() {
+        this.adaptee.SpecialRequest();
+
+    }
+}
